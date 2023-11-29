@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="motivasiOnboardingVM" type="com.evinanshsapplication.app.modules.motivasionboarding.data.viewmodel.MotivasiOnboardingVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearMotivasiOnboar"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylegray_51">
+        <TextView android:gravity="center_horizontal"
+            android:id="@+id/txtDescription"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_50pxh"
+            android:layout_marginStart="@dimen/_51pxh"
+            android:layout_marginTop="@dimen/_241pxv"
+            android:layout_width="match_parent"
+            android:lineSpacingExtra="@dimen/_28pxh"
+            android:text="@{motivasiOnboardingVM.motivasiOnboardingModel.txtDescription}"
+            style="@style/txtPlusJakartaSansromanbold20" tools:text="@string/msg_setiap_langkah"/>
+    </LinearLayout>
+</layout>

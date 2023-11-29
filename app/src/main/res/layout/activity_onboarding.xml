@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="onboardingVM" type="com.evinanshsapplication.app.modules.onboarding.data.viewmodel.OnboardingVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearOnboarding"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylegray_50">
+        <TextView android:ellipsize="end" android:id="@+id/txtTitle"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20pxh"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_marginTop="@dimen/_103pxv"
+            android:layout_width="wrap_content"
+            android:lineSpacingExtra="@dimen/_6pxh"
+            android:singleLine="true"
+            android:text="@{onboardingVM.onboardingModel.txtTitle}"
+            style="@style/txtPlusJakartaSansromanbold20" tools:text="@string/lbl_my_parent"/>
+        <ImageView android:id="@+id/imageImageTen"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_378pxh"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_marginTop="@dimen/_29pxv"
+            android:layout_width="@dimen/_345pxh"
+            android:scaleType="fitXY"
+            imageRes="@{@drawable/img_image10}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_image10"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtTitleOne"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20pxh"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_marginTop="@dimen/_11pxv"
+            android:layout_width="wrap_content"
+            android:lineSpacingExtra="@dimen/_6pxh"
+            android:singleLine="true"
+            android:text="@{onboardingVM.onboardingModel.txtTitleOne}"
+            style="@style/txtPlusJakartaSansromanbold20" tools:text="@string/lbl_welcome"/>
+        <TextView android:gravity="center_horizontal"
+            android:id="@+id/txtWelcometoMyP"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_20pxh"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_marginTop="@dimen/_16pxv"
+            android:layout_width="match_parent"
+            android:text="@{onboardingVM.onboardingModel.txtWelcometoMyP}"
+            style="@style/txtPlusJakartaSansromanregular15" tools:text="@string/msg_welcome_to_my_p"/>
+    </LinearLayout>
+</layout>

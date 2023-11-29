@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listvectorOneRowModel" type="com.evinanshsapplication.app.modules.dailychallenge.data.model.ListvectorOneRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowvectorOne"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" style="@style/groupStylewhite_1">
+        <LinearLayout android:id="@+id/linearRowvector"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_17pxv"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_marginTop="@dimen/_17pxv"
+            android:layout_weight="0.83" android:layout_width="0dp" android:orientation="horizontal">
+            <FrameLayout android:id="@+id/frameStackvector"
+                android:layout_height="@dimen/_31pxv"
+                android:layout_width="@dimen/_33pxh" style="@style/groupStylepink_201cornerRadius">
+                <ImageView android:id="@+id/imageVectorOne"
+                    android:layout_gravity="center"
+                    android:layout_height="@dimen/_16pxh"
+                    android:layout_marginBottom="@dimen/_7pxv"
+                    android:layout_marginEnd="@dimen/_2pxh"
+                    android:layout_marginStart="@dimen/_4pxh"
+                    android:layout_marginTop="@dimen/_7pxv"
+                    android:layout_width="@dimen/_26pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_vector_black_900_16x26"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_vector_black_900_16x26"/>
+            </FrameLayout>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtEyeContact"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_8pxv"
+                android:layout_marginStart="@dimen/_17pxh"
+                android:layout_marginTop="@dimen/_9pxv"
+                android:layout_weight="0.65" android:layout_width="0dp"
+                android:lineSpacingExtra="@dimen/_3pxh"
+                android:singleLine="true"
+                android:text="@{listvectorOneRowModel.txtEyeContact}"
+                style="@style/txtPlusJakartaSansromanbold10" tools:text="@string/lbl_eye_contact"/>
+        </LinearLayout>
+        <FrameLayout android:id="@+id/frameStackrectangle4208"
+            android:layout_height="@dimen/_22pxv"
+            android:layout_marginBottom="@dimen/_25pxv"
+            android:layout_marginEnd="@dimen/_11pxh"
+            android:layout_marginStart="@dimen/_154pxh"
+            android:layout_marginTop="@dimen/_18pxv" android:layout_width="@dimen/_22pxh">
+            <View android:background="@color/bluegray_100"
+                android:id="@+id/viewRectangle4208"
+                android:layout_gravity="bottom|start"
+                android:layout_height="@dimen/_16pxh"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_2pxh"
+                android:layout_marginTop="@dimen/_10pxv" android:layout_width="@dimen/_17pxh"/>
+            <ImageView android:id="@+id/imageImageNine"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_22pxh"
+                android:layout_width="@dimen/_22pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_image9"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_image9"/>
+        </FrameLayout>
+    </LinearLayout>
+</layout>

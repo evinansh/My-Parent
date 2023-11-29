@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="dataAnakRowModel" type="com.evinanshsapplication.app.modules.dataanak.data.model.DataAnakRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowberatbadan"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal" style="@style/groupStylecornerRadius">
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtBeratbadan"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_12pxv"
+            android:layout_marginStart="@dimen/_12pxh"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_weight="0.8" android:layout_width="0dp"
+            android:singleLine="true"
+            android:text="@{dataAnakRowModel.txtBeratbadan}"
+            style="@style/txtPlusJakartaSansromanmedium13" tools:text="@string/lbl_berat_badan"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtOne"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10pxv"
+            android:layout_marginStart="@dimen/_18pxh"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_weight="0.05" android:layout_width="0dp"
+            android:singleLine="true"
+            android:text="@{dataAnakRowModel.txtOne}"
+            style="@style/txtPlusJakartaSansromanmedium15" tools:text="@string/lbl2"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtKg"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_11pxv"
+            android:layout_marginEnd="@dimen/_11pxh"
+            android:layout_marginStart="@dimen/_4pxh"
+            android:layout_marginTop="@dimen/_14pxv"
+            android:layout_weight="0.15" android:layout_width="0dp"
+            android:singleLine="true"
+            android:text="@{dataAnakRowModel.txtKg}"
+            style="@style/txtPlusJakartaSansromanmedium11" tools:text="@string/lbl_kg"/>
+    </LinearLayout>
+</layout>
